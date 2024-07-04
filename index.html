@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="icon" href="./img/alura.ico">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="container">
+        <header class="container__header">
+            <img class="container__header__logo" src="./img/Frame 6.png" alt="Logo de Alura Latam.">
+        </header>
+        <div class="container__text">
+            <textarea class="container__text__push" id="placeholder" cols="30" rows="10" placeholder="Ingresa el texto aquí..."></textarea>
+        </div>
+
+        <div class="container__text__attention">
+            <p><strong class="sign">!</strong>  Sólo letras minúsculas y sin acento.</p>
+        </div>
+
+        <div class="container__button">
+            <button class="container__button__push" onclick="cifrar()">Cifrar</button>
+            <button class="container__button__push" onclick="descifrar()">Descifrar</button>
+        </div>
+    </div>
+
+    <div class="container__extra">
+        <img src="./img/Muñeco.png" class="container__extra__img" alt="Caricatura de una persona arrodillada observando un diamante a través de una lupa.">
+        <div class="container__extra__subtitle" id="resultado">
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo" class="container__extra__text">Ingresa el texto que deseas cifrar o descifrar</p>
+            <button class="container__extra__button" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+
+    <footer class="footer">Luissina Ma. Mariño Dansey - 2024</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
